@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-26T13:10:53 IST" name="Suite" finished-at="2023-07-26T13:11:22 IST" duration-ms="29233">
+  <suite started-at="2023-07-31T12:34:11 IST" name="Default suite" finished-at="2023-07-31T12:34:25 IST" duration-ms="14741">
     <groups>
     </groups>
-    <test started-at="2023-07-26T13:10:53 IST" name="Test" finished-at="2023-07-26T13:11:22 IST" duration-ms="29233">
-      <class name="eCommercePrjt.Lifestyle">
-        <test-method signature="LifestyleTest()[pri:0, instance:eCommercePrjt.Lifestyle@8a589a2]" started-at="2023-07-26T13:11:08 IST" name="LifestyleTest" finished-at="2023-07-26T13:11:11 IST" duration-ms="2821" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2023-07-31T12:34:11 IST" name="Default test" finished-at="2023-07-31T12:34:25 IST" duration-ms="14741">
+      <class name="eCommercePrjt.AirtelTest">
+        <test-method signature="Airtel()[pri:0, instance:eCommercePrjt.AirtelTest@6b81ce95]" started-at="2023-07-31T12:34:11 IST" name="Airtel" finished-at="2023-07-31T12:34:25 IST" duration-ms="14641" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=115.0.5790.110)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [755ae939bb106975b5da460ddc0a7f23, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50227}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50227/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 755ae939bb106975b5da460ddc0a7f23]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.fail(Assert.java:115)
-at eCommercePrjt.Lifestyle.LifestyleTest(Lifestyle.java:15)
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=115.0.5790.110)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [755ae939bb106975b5da460ddc0a7f23, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50227}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50227/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 755ae939bb106975b5da460ddc0a7f23
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:419)
+at eCommercePrjt.AirtelTest.Airtel(AirtelTest.java:16)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -45,23 +72,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LifestyleTest -->
-      </class> <!-- eCommercePrjt.Lifestyle -->
-      <class name="eCommercePrjt.AirtelTest">
-        <test-method signature="Airtel()[pri:0, instance:eCommercePrjt.AirtelTest@2c177f9e]" started-at="2023-07-26T13:10:53 IST" name="Airtel" finished-at="2023-07-26T13:11:08 IST" duration-ms="15126" status="PASS">
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Airtel -->
       </class> <!-- eCommercePrjt.AirtelTest -->
-      <class name="eCommercePrjt.Jio">
-        <test-method signature="JioTest()[pri:0, instance:eCommercePrjt.Jio@c65a5ef]" started-at="2023-07-26T13:11:11 IST" name="JioTest" finished-at="2023-07-26T13:11:22 IST" duration-ms="11059" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JioTest -->
-      </class> <!-- eCommercePrjt.Jio -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="eCommercePrjt.Lifestyle">
+      <class name="eCommercePrjt.AirtelTest">
         <methods>
-          <include name="Lifestyle"/>
+          <include name="Airtel"/>
         </methods>
-      </class> <!-- eCommercePrjt.Lifestyle -->
+      </class> <!-- eCommercePrjt.AirtelTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
